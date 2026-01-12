@@ -28,33 +28,6 @@
     --scrollbar-thumb-hover: linear-gradient(45deg, #5a6fd8, #6a4190);
 }
 
-/* Dark Theme */
-[data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #ffffff;
-    --text-secondary: #adb5bd;
-    --bg-secondary: #2d3436;
-    --bg-tertiary: #495057;
-    --border-color: #495057;
-    --navbar-bg: rgba(26, 26, 26, 0.95);
-    --card-bg: #2d3436;
-    --modal-bg: #2d3436;
-    --modal-overlay: rgba(0, 0, 0, 0.8);
-    --btn-primary: #667eea;
-    --btn-primary-hover: #5a6fd8;
-    --btn-outline: rgba(255, 255, 255, 0.2);
-    --toast-success: #28a745;
-    --toast-danger: #dc3545;
-    --toast-info: #17a2b8;
-    --toast-warning: #ffc107;
-    --shadow: rgba(0, 0, 0, 0.3);
-    --hero-gradient: linear-gradient(135deg, #2d3436 0%, #495057 100%);
-    --progress-bg: linear-gradient(45deg, #667eea, #764ba2);
-    --scrollbar-track: #2d3436;
-    --scrollbar-thumb: linear-gradient(45deg, #667eea, #764ba2);
-    --scrollbar-thumb-hover: linear-gradient(45deg, #5a6fd8, #6a4190);
-}
-
 /* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -679,3 +652,4 @@ body {
         margin-bottom: 15px;
     }
 }
+
