@@ -51,31 +51,6 @@ function showAlert(message, type) {
     showToast(message, type);
 }
 
-// ==========================================
-// THEME MANAGEMENT (DARK/LIGHT MODE)
-// ==========================================
-
-class ThemeManager {
-    constructor() {
-        this.currentTheme = localStorage.getItem('theme') || 'light';
-        this.init();
-    }
-
-    init() {
-        this.applyTheme(this.currentTheme);
-        this.createToggleButton();
-        this.bindEvents();
-    }
-
-    createToggleButton() {
-        const toggleBtn = document.createElement('button');
-        toggleBtn.id = 'themeToggle';
-        toggleBtn.className = 'theme-toggle-btn';
-        toggleBtn.innerHTML = `
-            <i class="fas ${this.currentTheme === 'light' ? 'fa-moon' : 'fa-sun'}"></i>
-        `;
-        toggleBtn.setAttribute('aria-label', 'Toggle theme');
-
         // Insert after navbar
         const navbar = document.querySelector('.navbar');
         if (navbar) {
@@ -652,3 +627,4 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(planStyle);
 });
+
